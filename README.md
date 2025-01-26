@@ -36,6 +36,7 @@ We first categorize the data.
 1. End user's authentication data and PII  
 2. CloudWatch log data
 3. App and system confguration data
+
 Data Protection Controls:
 
 ***Note: The following will give you pointers. The security controls that get selected would depend on organizational contexts, budget, risk profile and risk appetite.
