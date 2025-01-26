@@ -6,7 +6,14 @@ Most small to medium businesses will generally have a simple website with the fo
 We want to get started with the client fast and show them the work to gain confidence. We immediately map the components to <a href="https://www.cisecurity.org/controls/cis-controls-list" target="_blank">CIS 18 critical security controls</a> . This is safe as there are available mappings towards other frameworks.
 
 #### Scenario Setup
-Let us consider a more detailed ficitional business setup in order to do our assessments.
+Let us consider a more detailed ficitional business setup in order to do a elaborate assessment.
+
+<img src="images/small-business-aws.png" alt="Lucidchart Diagram" width="500"/>
+
+We have the following components-
+1. AWS EC2 instances that host Apache web servers.
+2. AWS Lambda function that takes instructions from web servers.
+3. AWS RDS database to store data.
 
 ###### CIS Control 1: Inventory and Control of Enterprise Assets
 Inventory of Assets:
