@@ -50,3 +50,6 @@ Data Protection Controls:
 2. AWS Lambda security misconfigurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS Lambda security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
 3. AWS RDS maps to [Owasp Database Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html) and [AWS best practices](https://aws.amazon.com/blogs/database/applying-best-practices-for-securing-sensitive-data-in-amazon-rds/).
 4. Configure AWS WAF rules to protect against OWASP Top 10 and other rules based on the system context.
+
+###### CIS Control 5: Account Management
+Coming soon...
