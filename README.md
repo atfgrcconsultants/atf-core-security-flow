@@ -21,3 +21,12 @@ Inventory of Software:
 P.S.- CIS Control 1 and 2 can be equivalent of scoping in other frameworks such as NIST CSF 2.0's Identify function or ISO 27001. I will show later how if we want do to NIST CSF 2.0 with the same architecture. 
 
 ###### CIS Control 3: Data Protection
+We first categorize the data.
+1. End client and admin authentication data.
+2. End client PII.
+3. System and server log data.
+4. Payment Information.
+P.S.- These information can be used to create a baseline of state of data in NIST CSF 2.0.
+
+###### CIS Control 4: Secure Configuration of Enterprise Assets and Software
+To be continued ...
