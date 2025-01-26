@@ -3,7 +3,7 @@ Most small to medium businesses will generally have a simple website with the fo
 
 <img src="images/small-business-web.png" alt="Lucidchart Diagram" width="500"/>
 
-We want to get started with the client fast and show them the work to gain confidence. We immediately map the components to <a href="https://www.cisecurity.org/controls/cis-controls-list" target="_blank">CIS 18 critical security controls</a> . This is safe as there are available mappings towards other frameworks.
+We want to get started with the client fast by mapping the components to <a href="https://www.cisecurity.org/controls/cis-controls-list" target="_blank">CIS 18 critical security controls</a> . This is safe to do as there are available mappings towards other regulatory and compliance frameworks.
 
 #### Scenario Setup
 Let us consider a more detailed ficitional business setup in order to do a elaborate assessment.
@@ -11,11 +11,11 @@ Let us consider a more detailed ficitional business setup in order to do a elabo
 <img src="images/small-business-aws.png" alt="Lucidchart Diagram" width="500"/>
 
 We have the following components:
-1. AWS EC2 instances that host Apache web servers.
+1. AWS EC2 instances that host apache web servers.
 2. AWS WAF to filter traffic to web servers.
 3. AWS Lambda function that takes instructions from web servers.
 4. AWS RDS database to store data.
-5. AWS Cloudwatch service logging all the above components.
+5. AWS Cloudwatch service to log events.
 
 ###### CIS Control 1: Inventory and Control of Enterprise Assets
 Inventory of Assets:
@@ -33,7 +33,7 @@ Inventory of Software:
 
 ###### CIS Control 3: Data Protection
 We first categorize the data.
-1. End user's authentication and PII
+1. End user's authentication data and PII  
 2. CloudWatch log data
 3. App and system confguration data
 Data Protection Controls:
@@ -47,8 +47,8 @@ Data Protection Controls:
 ***Note: The following will give you pointers. The security controls that get selected would depend on organizational contexts, budget and risk profile and risk appetite.
 
 1. AWS EC2 configurations i.e. IAM credentials, EC2 instance types and sizes. Maps to <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/" target="_blank">OWASP Top 10- A05:2021 – Security Misconfiguration.</a> Please also refer to [AWS EC2 best practices](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html).
-2. AWS Lambda security misconfigurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS Lambda security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
-3. AWS RDS maps to [Owasp Database Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html) and [AWS best practices](https://aws.amazon.com/blogs/database/applying-best-practices-for-securing-sensitive-data-in-amazon-rds/).
+2. AWS Lambda security configurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS Lambda security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
+3. AWS RDS configuration maps to [Owasp Database Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html) and [AWS best practices](https://aws.amazon.com/blogs/database/applying-best-practices-for-securing-sensitive-data-in-amazon-rds/).
 4. Configure AWS WAF rules to protect against OWASP Top 10 and other rules based on the system context.
 
 ###### CIS Control 5: Account Management
@@ -66,4 +66,5 @@ Data Protection Controls:
 
 1. Consider using AWS services such as Amazon Inspector, AWS Secuity Hub, AWS GuardDuty and 3rd party tools such as OWASP ZAP, Burpsuite etc.
 2. Actively investigate vulnerablilites found and take remediation steps if needed.
-3. Maps to [OWASP A06:2021 – Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/), [OWASP A10:2021 – Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/), [OWASP A05:2021 – Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/), [OWASP A03:2021 – Injection](https://owasp.org/Top10/A03_2021-Injection/) and [OWASP A02:2021 – Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/).
+3. Integrate vulnerability checks in the testing and pre-deployment phase.
+4. Maps to [OWASP A06:2021 – Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/), [OWASP A10:2021 – Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/), [OWASP A05:2021 – Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/), [OWASP A03:2021 – Injection](https://owasp.org/Top10/A03_2021-Injection/) and [OWASP A02:2021 – Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/).
