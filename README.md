@@ -21,14 +21,15 @@ We have the following components:
 Inventory of Assets:
 1. AWS EC2 instances
 2. AWS WAF
-3. AWS RDS
-4. AWS Cloudwatch
+3. AWS Lambda
+4. AWS RDS
+5. AWS Cloudwatch
 
 ###### CIS Control 2: Inventory and Control of Software Assets
 Inventory of Software:
 1. Apache web server software
 2. Javascript/React frontend web application
-3. Python scripts to execute as Lambad functions
+3. Python scripts to execute as Lambda functions
 
 ###### CIS Control 3: Data Protection
 We first categorize the data.
@@ -37,4 +38,4 @@ We first categorize the data.
    
 ###### CIS Control 4: Secure Configuration of Enterprise Assets and Software
 1. AWS EC2 configurations i.e. IAM credentials, EC2 instance types and sizes. Maps to <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/" target="_blank">OWASP Top 10- A05:2021 – Security Misconfiguration.</a> Please also refer to [AWS EC2 best practices](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html).
-2. 
+2. AWS Lambda security misconfigurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
