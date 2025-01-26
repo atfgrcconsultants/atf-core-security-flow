@@ -26,6 +26,7 @@ We first categorize the data.
 2. End client PII.
 3. System and server log data.
 4. Payment Information.
+
 P.S.- These information can be used to create a baseline of state of data in NIST CSF 2.0.
 
 ###### CIS Control 4: Secure Configuration of Enterprise Assets and Software
