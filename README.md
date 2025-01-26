@@ -18,6 +18,6 @@ Inventory of Software:
 3. Firewall suite
 4. web application/inhouse software
 
-P.S- CIS Control 1 and 2 can be equivalent of scoping in other frameworks such as NIST CSF 2.0's Identify function or ISO 27001. I will show later how if we want to NIST CSF 2.0  with the same architecture. 
+P.S.- CIS Control 1 and 2 can be equivalent of scoping in other frameworks such as NIST CSF 2.0's Identify function or ISO 27001. I will show later how if we want do to NIST CSF 2.0 with the same architecture. 
 
 ###### CIS Control 3: Data Protection
