@@ -61,3 +61,9 @@ Data Protection Controls:
 
 1. AWS IAM policies must be defined with security best practices such least privilege, policy attributes/contexts such as time, source, vpc etc. and bind with IAM principles ensuring separation of duties.
 2. Maps to [OWASP A01:2021 – Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/).
+
+###### CIS Control 7: Continuous Vulnerability Management
+
+1. Consider using AWS services such as Amazon Inspector, AWS Secuity Hub, AWS GuardDuty and 3rd party tools such as OWASP ZAP, Burpsuite etc.
+2. Actively investigate vulnerablilites found and take remediation steps if needed.
+3. Maps to [OWASP A06:2021 – Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/), [OWASP A10:2021 – Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/), [OWASP A05:2021 – Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/), [OWASP A03:2021 – Injection](https://owasp.org/Top10/A03_2021-Injection/) and [OWASP A02:2021 – Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/).
