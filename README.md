@@ -37,5 +37,8 @@ We first categorize the data.
 2. CloudWatch log data.
    
 ###### CIS Control 4: Secure Configuration of Enterprise Assets and Software
+***Note: The following will give you pointer. The security controls that get selected would depend on organizational contexts, budget and risk profile and risk appetite.
+
 1. AWS EC2 configurations i.e. IAM credentials, EC2 instance types and sizes. Maps to <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/" target="_blank">OWASP Top 10- A05:2021 – Security Misconfiguration.</a> Please also refer to [AWS EC2 best practices](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html).
 2. AWS Lambda security misconfigurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS Lambda security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
+3. 
