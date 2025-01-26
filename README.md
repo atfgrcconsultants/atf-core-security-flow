@@ -33,12 +33,18 @@ Inventory of Software:
 
 ###### CIS Control 3: Data Protection
 We first categorize the data.
-1. End user's authentication and PII.
-2. CloudWatch log data.
+1. End user's authentication and PII
+2. CloudWatch log data
+3. App and system confguration data
+Data Protection Controls:
+***Note: The following will give you pointers. The security controls that get selected would depend on organizational contexts, budget, risk profile and risk appetite.
+1. Maps to [OWASP A02:2021 – Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/), [OWASP A03:2021 – Injection](https://owasp.org/Top10/A03_2021-Injection/),[OWASP A09:2021 – Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/).
+2. Make sure logs are tamper resistant. This maps to [A08:2021 – Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/).
+
    
 ###### CIS Control 4: Secure Configuration of Enterprise Assets and Software
-***Note: The following will give you pointer. The security controls that get selected would depend on organizational contexts, budget and risk profile and risk appetite.
+***Note: The following will give you pointers. The security controls that get selected would depend on organizational contexts, budget and risk profile and risk appetite.
 
 1. AWS EC2 configurations i.e. IAM credentials, EC2 instance types and sizes. Maps to <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/" target="_blank">OWASP Top 10- A05:2021 – Security Misconfiguration.</a> Please also refer to [AWS EC2 best practices](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-best-practices.html).
 2. AWS Lambda security misconfigurations. Maps to [OWASP Serverless Top 10](https://owasp.org/www-project-serverless-top-10/), AWS Lambda security best practices[1](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) and [2](https://docs.aws.amazon.com/lambda/latest/dg/lambda-security.html).
-3. 
+3. AWS RDS maps to [Owasp Database Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html) and [AWS best practices](https://aws.amazon.com/blogs/database/applying-best-practices-for-securing-sensitive-data-in-amazon-rds/).
