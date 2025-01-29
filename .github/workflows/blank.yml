@@ -18,7 +18,7 @@ jobs:
       - name: Install Pandoc
         run: sudo apt-get install -y pandoc
       - name: Convert to PDF
-        run: pandoc README.md -o README.pdf
+        run: pandoc README.md -o README.pdf --pdf-engine=wkhtmltopdf
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
         with:
