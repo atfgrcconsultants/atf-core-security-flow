@@ -22,7 +22,7 @@ jobs:
           sudo apt install -y texlive texlive-xetex texlive-latex-extra
         
       - name: Convert to PDF
-        run: pandoc README.md -o README.pdf 
+        run: pandoc README.md -o README.pdf --resource-path=.:images
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v3
         with:
